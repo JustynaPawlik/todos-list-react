@@ -1,0 +1,31 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.section__button {
+    color: hsl(180, 100%, 25%);
+    border: none;
+    background: transparent;
+    transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+    .section__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__button:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button--hidden:disabled {
+    color: #ccc;
+}
