@@ -10,7 +10,7 @@ https://justynapawlik.github.io/todos-list-react/
 Description
 This is application to organize your work and life. You can easily manage your tasks to do - you can add them, mark them as finished and delete.
 
-![application](images/Animation.gif)
+![application](public/Animation.gif)
 
 Used technologies:
 - html
