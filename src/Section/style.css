@@ -8,7 +8,6 @@
 
 @media (max-width: 767px) {
     .section {
-        
         padding: 0px;
         width: 95%;
     }
@@ -23,7 +22,7 @@
     padding: 20px;
     margin-top: 5px;
     font-size: 22px;
-    border-bottom: 1px solid rgb(240, 236, 236);  
+    border-bottom: 1px solid rgb(240, 236, 236);
 }
 
 @media (max-width: 767px) {
@@ -42,4 +41,3 @@
         padding-bottom: 20px;
     }
 }
-

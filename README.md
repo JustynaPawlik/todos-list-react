@@ -5,19 +5,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Task List
 
 Demo
-https://justynapawlik.github.io/toDoList/
+https://justynapawlik.github.io/todos-list-react/
 
 Description
 This is application to organize your work and life. You can easily manage your tasks to do - you can add them, mark them as finished and delete.
 
+![application](images/Animation.gif)
+
 Used technologies:
-html
-CSS
-JS
-BEM
-Flex
-Grid
-React
+- html
+- CSS
+- JS
+- BEM
+- Flex
+- Grid
+- React
 
 ## Available Scripts
 
