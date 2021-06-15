@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -40,13 +40,25 @@ function App() {
   const addNewTask = (content) => {
     setTasks(tasks => [
       ...tasks,
-    {
-      content,
-      done: false,
-      id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-    },
-  ]);
+      {
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      },
+    ]);
   };
+
+  useEffect(() => {
+    const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+    if (tasks !== null) {
+      setTasks(tasks);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <Container className="container">
@@ -54,7 +66,7 @@ function App() {
 
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask}/>}
+        body={<Form addNewTask={addNewTask} />}
       />
 
       <Section
@@ -70,7 +82,7 @@ function App() {
         extraHeaderConntent={
           <Buttons
             tasks={tasks}
-            hideDone={hideDone} 
+            hideDone={hideDone}
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
           />
