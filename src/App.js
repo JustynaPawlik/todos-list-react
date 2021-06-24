@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import styled from "styled-components";
 import Form from "./Form";
 import Tasks from "./Tasks";
+import Header from "./Header";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Header from "./Header";
+
 import Container from "./Container";
 
 function App() {
@@ -11,19 +13,11 @@ function App() {
   const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem('tasks')) || [
     { id: 1, content: "przejść na Reacta", done: false },
     { id: 2, content: "zjeść obiad", done: true },
-
-    
   ]);
-
-  
-  
-  
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
-
-  
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -61,7 +55,7 @@ function App() {
   };
 
   return (
-    <Container className="container">
+    <Container>
       <Header title="Lista zadań" />
 
       <Section
