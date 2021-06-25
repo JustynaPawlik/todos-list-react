@@ -5,22 +5,21 @@ const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const inputRef = useRef(null);
-    const  focusInput = () => {
-    inputRef.current.focus();
+    const focusInput = () => {
+        inputRef.current.focus();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
         const trimmedNewTaskContent = newTaskContent.trim();
-
-        if(!trimmedNewTaskContent) {
+        if (!trimmedNewTaskContent) {
             return;
         }
         addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
     };
-    
+
     return (
         <FormElement onSubmit={onFormSubmit}>
             <FormInput
@@ -31,7 +30,7 @@ const Form = ({ addNewTask }) => {
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <FormButton onClick={focusInput}>Dodaj zadanie</FormButton> 
+            <FormButton onClick={focusInput}>Dodaj zadanie</FormButton>
         </FormElement>
     );
 };

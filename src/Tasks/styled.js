@@ -16,13 +16,13 @@ export const Item = styled.li`
     align-items: center;
     word-break: break-all;
 
-    ${({hidden}) => hidden && css `
+    ${({ hidden }) => hidden && css`
         display: none;
     `}
 `;
 
 export const Content = styled.span`
-    ${({done}) => done && css`
+    ${({ done }) => done && css`
         text-decoration: line-through;
     `}
 `;
@@ -35,7 +35,7 @@ export const Button = styled.button`
     border: none;
     transition: background 0.3s;
 
-    ${({toggleDone}) => toggleDone && css`
+    ${({ toggleDone }) => toggleDone && css`
         background: hsl(120, 61%, 34%);
 
         &:hover {
@@ -43,7 +43,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${({remove}) => remove && css`
+    ${({ remove }) => remove && css`
         background: hsl(348, 83%, 47%);
 
         &:hover {

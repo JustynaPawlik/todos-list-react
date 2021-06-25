@@ -29,5 +29,4 @@ export const Button = styled.button`
         flex-basis: 100%;
         margin: 10px;
     }
-
 `;

@@ -3,7 +3,7 @@ import { ContainerElement } from "./styled";
 const Container = ({ children }) => (
     <ContainerElement>
         {children}
-        </ContainerElement>
+    </ContainerElement>
 );
 
 export default Container;

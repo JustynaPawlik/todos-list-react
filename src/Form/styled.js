@@ -22,9 +22,9 @@ export const FormInput = styled.input`
     }
 
     @media (max-width: 767px) {
-            margin: 0 0 10px;
-            width: 90%;
-        }
+        margin: 0 0 10px;
+        width: 90%;
+    }
 `;
 
 export const FormButton = styled.button`
@@ -54,4 +54,3 @@ export const FormButton = styled.button`
 
 
 
-  

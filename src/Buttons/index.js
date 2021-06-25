@@ -13,7 +13,6 @@ export const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                 >
                     Ukończ wszystkie
                 </Button>
-                
             </>
         )}
     </ButtonsList>
