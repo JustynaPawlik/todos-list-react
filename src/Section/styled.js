@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const SectionElement = styled.section`
     margin: 10px 0;
-    background-color: #fff;
-    box-shadow: 0 0 5px #ddd;
+    background-color: ${({ theme }) => theme.color.white};
+    box-shadow: 0 0 5px ${({ theme }) => theme.color.boxShadow};
     }
 `;
 
@@ -19,7 +19,7 @@ export const SectionHeader = styled.header`
     border-bottom: 1px solid rgb(240, 236, 236);
 }
 
-@media (max-width: 767px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -28,7 +28,7 @@ export const SectionTitle = styled.h2`
 font-size: 22px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
         padding-bottom: 20px;
     }

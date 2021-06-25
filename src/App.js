@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTasks } from "./useTasks";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Header from "./Header";
@@ -24,6 +25,7 @@ function App() {
   } = useTasks();
 
   return (
+    <ThemeProvider theme={theme}>
     <Container>
       <Header title="Lista zadań" />
       <Section
@@ -50,6 +52,7 @@ function App() {
         }
       />
     </Container>
+    </ThemeProvider>
   );
 }
 
