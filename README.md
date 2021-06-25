@@ -13,13 +13,16 @@ This is application to organize your work and life. You can easily manage your t
 ![application](public/Animation.gif)
 
 Used technologies:
-- html
+- HTML
 - CSS
-- JS
-- BEM
-- Flex
-- Grid
-- React
+- REACT JS
+- FLEX
+- GRID
+- IMMUTABILITY
+- CREATE-REACT-APP
+- CUSTOM HOOKS
+- MEDIA QUERIES
+- STYLED-COMPONENTS
 
 ## Available Scripts
 
