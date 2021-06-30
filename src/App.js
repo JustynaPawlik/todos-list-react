@@ -8,6 +8,7 @@ import Header from "./Header";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Container from "./Container";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -27,6 +28,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <Container>
+      <GlobalStyle />
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
