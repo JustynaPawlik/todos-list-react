@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useTasks } from "../../useTasks";
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "../../theme";
 import Form from "./Form";
@@ -11,20 +9,6 @@ import Container from "../../common/Container";
 import { GlobalStyle } from "../../GlobalStyle";
 
 function Tasks() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
-
-  const {
-    tasks,
-    removeTask,
-    toggleTaskDone,
-    setAllDone,
-    addNewTask
-  } = useTasks();
-
   return (
     <ThemeProvider theme={theme}>
     <Container>
@@ -32,26 +16,12 @@ function Tasks() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form />}
       />
       <Section
         title="Lista zadań"
-        body={
-          <TaskList
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
-          />
-        }
-        extraHeaderConntent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-          />
-        }
+        body={<TaskList/>}
+        extraHeaderConntent={<Buttons />}
       />
     </Container>
     </ThemeProvider>
