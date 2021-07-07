@@ -23,6 +23,7 @@ Used technologies:
 - CUSTOM HOOKS
 - MEDIA QUERIES
 - STYLED-COMPONENTS
+- REDUX
 
 ## Available Scripts
 
