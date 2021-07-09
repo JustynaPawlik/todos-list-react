@@ -10,13 +10,12 @@ export const Buttons = () => {
     const dispatch = useDispatch();
 
     return (
-        <>
+        <ButtonsList>
         <Button onClick={() => dispatch(fetchExampleTasks())}>
                         Pobierz przykładowe zadania
                     </Button>
-        <ButtonsList>
-            {tasks.length > 0 && (
-                <>
+                    {tasks.length > 0 && (
+                        <>
                     <Button onClick={() => dispatch(toggleHideDone())}>
                         {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </Button>
@@ -29,7 +28,7 @@ export const Buttons = () => {
                 </>
             )}
         </ButtonsList>
-        </>
+      
     )
 };
 
