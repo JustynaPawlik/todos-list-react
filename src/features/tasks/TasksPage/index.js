@@ -5,10 +5,14 @@ import Header from "../../../common/Header";
 import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Container from "../../../common/Container";
+import { TaskPage } from "../TaskPage";
+import { useLocation } from 'react-router-dom'
 
 function TasksPage() {
+  const location = useLocation();
   return (
     <Container>
+      {location.pathname}
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
@@ -25,3 +29,4 @@ function TasksPage() {
 }
 
 export default TasksPage;
+

@@ -2,7 +2,7 @@ import { HashRouter, NavLink, Switch, Route, Redirect } from "react-router-dom";
 import React from "react";
 import AuthorPage from "./features/author/AuthorPage";
 import {TaskPage} from './features/tasks/TaskPage';
-import {TasksPage} from './features/tasks/TasksPage';
+import TasksPage from './features/tasks/TasksPage/index';
 
 export default () => (
     <HashRouter>
@@ -20,7 +20,7 @@ export default () => (
                     <TaskPage />
                 </Route>
                 <Route path="/zadania">
-                    <TaskPage />
+                    <TasksPage />
                 </Route>
                 <Route path="/autor">
                     <AuthorPage />
