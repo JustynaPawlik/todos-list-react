@@ -35,7 +35,8 @@ const TaskList = () => {
                         <Link to={`/zadania/${task.id}`}>{task.content}</Link>
                     </Content>
                     <Button
-                        remove onClick={() => dispatch(removeTask(task.id))}>
+                        remove 
+                        onClick={() => dispatch(removeTask(task.id))}>
                         &#128465;
                     </Button>
                 </Item>

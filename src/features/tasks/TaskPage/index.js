@@ -3,9 +3,7 @@ import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import { useParams } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import  getTaskById from "../tasksSlice";
-
-
+import  {getTaskById} from "../tasksSlice";
 
 export const TaskPage = () => {
     const { id } = useParams();
@@ -18,7 +16,8 @@ export const TaskPage = () => {
           title={task ? task.content : "Nie znaleziono zadania 😢"}
           body={
           <><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-          </>}
+          </>
+          }
         />
       </Container>
       
