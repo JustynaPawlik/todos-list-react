@@ -1,6 +1,4 @@
-
 import { StyledNavLink, Item, List } from "./styled"
-
 
 export const Navigation = () => {
     return (

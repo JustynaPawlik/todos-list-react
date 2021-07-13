@@ -11,7 +11,6 @@ margin: 0;
 
 export const Item =styled.li`
 margin: 20px;
-
 `;
 
 const activeClassName = "link-active";
