@@ -51,3 +51,8 @@ export const Button = styled.button`
         }
     `}
 `;
+
+export const StyledLink = styled.li`
+    text-decoration: none;
+    }
+`;
