@@ -4,10 +4,11 @@ import AuthorPage from "./features/author/AuthorPage";
 import {TaskPage} from './features/tasks/TaskPage';
 import TasksPage from './features/tasks/TasksPage/index';
 import { StyledNavLink } from "./styled";
+import { Navigation } from "./Navigation";
 
 export default () => (
     <HashRouter>
-    <nav>
+    <Navigation />
         <ul>
             <li>
                 <StyledNavLink to="/zadania">Zadania</StyledNavLink>
@@ -30,6 +31,5 @@ export default () => (
                   <Redirect to="/zadania" />
                 </Route>
             </Switch>
-    </nav>
     </HashRouter>
 );
