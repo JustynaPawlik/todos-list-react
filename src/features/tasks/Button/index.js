@@ -12,6 +12,7 @@ export const Button = styled.button`
     border: none;
     background: transparent;
     transition: 0.3s;
+    font-size: 14px; 
     
     &:hover {
             color: ${({ theme }) => theme.color.lightTeal};;
