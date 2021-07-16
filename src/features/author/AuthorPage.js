@@ -9,7 +9,7 @@ export default () => (
         <Section
             title="Justyna Pawlik"
             body={
-                <>nanana</>
+                <>cdn...</>
     }
     /></Container>
 )

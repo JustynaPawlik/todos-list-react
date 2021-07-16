@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from 'react-router-dom';
 import { List, Item, Content, Button, StyledLink } from "./styled";
+import searchQueryParamName from "../searchQueryParamName";
+import { useQueryParameter } from "../queryParameters";
 import { 
-    selectTasks, 
     toggleTaskDone, 
     removeTask, 
     selectHideDone,
@@ -10,10 +10,7 @@ import {
  } from "../../tasksSlice";
 
 const TaskList = () => {
-    const location = useLocation();
-    const query = (new URLSearchParams(location.search)).get("szukaj");
-
-
+    const query = useQueryParameter(searchQueryParamName);
     const tasks = useSelector(state => selectTasksByQuery(state, query));
     const dispatch = useDispatch();
     const hideDone = useSelector(selectHideDone);
