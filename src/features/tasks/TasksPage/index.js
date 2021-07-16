@@ -5,8 +5,8 @@ import Header from "../../../common/Header";
 import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Container from "../../../common/Container";
-import { TaskPage } from "../TaskPage";
 import Search from "./Search";
+import { ExampleTasksButtton } from "./ExampleTasksButton";
 
 function TasksPage() {
  
@@ -14,6 +14,7 @@ function TasksPage() {
     <Container>
       <Header title="Lista zadań" />
       <Section
+        button={<ExampleTasksButtton />}
         title="Dodaj nowe zadanie"
         body={<Form />}
       />
