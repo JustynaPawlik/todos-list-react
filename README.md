@@ -8,7 +8,7 @@ Demo
 https://justynapawlik.github.io/todos-list-react/
 
 Description
-This is application to organize your work and life. You can easily manage your tasks to do - you can add them, mark them as finished and delete.
+This is application to organize your work and life. You can easily manage your tasks to do - you can add them, mark them as finished and remove. If you want you can also download example tasks.
 
 ![application](public/Animation.gif)
 
@@ -19,11 +19,15 @@ Used technologies:
 - FLEX
 - GRID
 - IMMUTABILITY
+- LOCAL STORAGE
 - CREATE-REACT-APP
 - CUSTOM HOOKS
 - MEDIA QUERIES
 - STYLED-COMPONENTS
 - REDUX
+- REDUX SAGA
+- REDUX ROUTER
+- REDUX TOOLKIT
 
 ## Available Scripts
 
