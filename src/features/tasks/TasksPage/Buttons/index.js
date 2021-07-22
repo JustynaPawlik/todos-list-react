@@ -37,11 +37,9 @@ export const Buttons = () => {
                     >
                         Ukończ wszystkie
                     </Button>
-                    
                 </>
             )}
         </ButtonsList>
-      
     )
 };
 
