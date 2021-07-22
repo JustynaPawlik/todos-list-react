@@ -7,9 +7,9 @@ export default () => (
     <Container>
         <Header title="O autorze" />
         <Section
-            title="Justyna Pawlik"
+            title="Cześć! Jestem Justyna ! 😉"
             body={
-                <>cdn...</>
+                <> Pracuję jako specialist for HR and payroll systems and applications. Obecnie szukam możliwości rozwoju w IT. Moim marzeniem jest zostać <strong>front-end developerem</strong>. A prywatnie... uwielbiam teatr i bieganie.</>
     }
     /></Container>
 )
