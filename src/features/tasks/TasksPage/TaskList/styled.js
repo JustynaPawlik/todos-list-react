@@ -55,5 +55,10 @@ export const Button = styled.button`
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
+    
+    &:hover {
+        color: ${({ theme }) => theme.color.lightTeal};;
+    }
     }
 `;
